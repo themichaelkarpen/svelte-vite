@@ -75,4 +75,8 @@ if production build needs to be in a nested folder, update `package.json` like t
 
 <br>
 
-more to come...
+**committing to vite over svelte rollup**
+
+- would love to take advantage of hmr, but my only blocker is I need `svelte-router-spa` to work in dev mode. It works with a production build but not in dev. I have tested this in another repo, but is private due to company info in it.
+- submitted a [GH Issue](https://github.com/jorgegorka/svelte-router/issues/119) on this
+- this production build is awesome, especially with the base param in the build script. on production server I only need one rewrite rule, whereas with svelte rollup I need many.
