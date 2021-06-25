@@ -3,12 +3,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
     "bulma": "^0.9.2",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.0",
     "node-sass": "^6.0.0",
+    "prettier": "^2.3.1",
+    "prettier-plugin-svelte": "^2.3.1",
     "svelte": "^3.37.0",
     "svelte-preprocess": "^4.7.3",
     "vite": "^2.3.7"
